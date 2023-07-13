@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+.pessoais {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    width: 19%;
+    max-width: 19%;
+    margin-right: 22%;
+
+}
+
+.principais {
+    margin-top: 15%;
+    width: 100%;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+button:hover {
+    color: black;
+    text-decoration: none;
+}
+
+button.active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        flex-wrap: nowrap;
+    }
+
+    .pessoais {
+        width: auto;
+        max-width: none;
+        margin-right: 30px;
+    }
+
+    .principais {
+        max-width: none;
+    }
+
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    label {
+        width: 25%;
+    }
+
+    input[type="number"],
+    input[type="number"],
+    input[type="number"],
+    input[type="number"],
+    input[type="number"],
+    input[type="date"],
+    
+
+    textarea {
+        width: 75%;
+    }
+}
+
+.fullscreen-div {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+form {
+
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#meuBotao {
+    display: none;
+  }
+label {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-weight: bold;
+
+}
+
+input[type="number"],
+input[type="number"],
+input[type="number"],
+input[type="number"],
+input[type="number"],
+input[type="date"],
+
+
+
+textarea {
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+    background-color: #333;
+	color: #fff;
+	padding: 1px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+    font-size: 18px;
+    height: 28px;
+}

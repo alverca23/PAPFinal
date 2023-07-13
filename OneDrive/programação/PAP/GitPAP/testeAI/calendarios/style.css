@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+}
+
+.main {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.calendar-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.calendar-header button {
+  font-size: 1.2rem;
+  color: #555;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calendar-header button:hover {
+  background-color: #ccc;
+}
+
+.calendar-header #month-year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #555;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calendar-day:hover {
+  background-color: #333;
+  color: white;
+}
+
+.calendar-day.active {
+  background-color: #333;
+  color: white;
+}
+
+.calendar-day.highlighted {
+  background-color: red;
+  color: white;
+}
+
+.calendar-day.highlighted:hover {
+  background-color: red;
+  color: white;
+}
+
+
+input {
+  width: 100%;
+  height:50px;
+  font-size: 20px;
+}
+
+.event-day {
+  background-color: #0f45d8;
+  color: #fff;
+  /* Adicione outros estilos de destaque, se necessário */
+}

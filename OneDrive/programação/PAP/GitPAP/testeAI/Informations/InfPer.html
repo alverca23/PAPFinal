@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleINF.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <h2>Informações Pessoais</h2>
+
+      <label for="signup-Birthday">Data de Nascimento:</label><br>
+      <input type="date" id="Birthday" name="signup-Birthday">
+
+      <label for="signup-Height">Altura Cm:</label><br>
+      <input type="number" min="0" id="Height" name="signup-Height">
+
+      <label for="signup-Weight">Peso kg:</label><br>
+      <input type="number" min="0" id="Weight" name="signup-Weight">
+
+      <label for="signup-Hobbies">Hobbies:</label><br>
+      <input type="text" id="Hobbies" name="signup-Hobbies">
+
+      <p>
+        <button onclick="update()">Enviar</button>
+      </p>
+
+    </div>
+  </div>
+  <script src="../Informations/scriptINF.js"></script>
+</body>
+
+</html>

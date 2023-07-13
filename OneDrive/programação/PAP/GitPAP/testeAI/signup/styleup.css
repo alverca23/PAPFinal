@@ -1,0 +1,202 @@
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.col-12 {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .left-side {
+    height: 30vh;
+    
+    
+  }
+  
+  .left-side img {
+    margin-top: 0;
+    display: flex;
+    width: 50%;
+    margin-left: 40%;
+    margin-bottom: 25%;
+    
+  }
+  
+  .input-up, .input-midle, .input-down {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2%;
+  }
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+ 
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: #333;
+}
+
+.right-side {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.right-side h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.right-side p {
+  margin-bottom: 20px;
+}
+
+.left-side img {
+  max-width: 70%;
+  height: auto;
+  margin-top: 40%;
+  margin-right: 40%;
+  display: flex;
+}
+
+.input-up,
+.input-midle,
+.input-down {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-up input,
+.input-midle input,
+.input-down input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.input-up label,
+.input-midle label,
+.input-down label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+
+.right-side h2{
+  font-size: 26px;
+  text-align: center;
+}
+
+.right-side p{
+  margin: 15px 0;
+}
+
+
+.right-side button {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.right-side button:hover {
+  background-color: #444;
+  transition: all 0.3s ease-in-out;
+}
+
+.other{
+  text-align: center;
+  margin-top: 3%;
+}
+
+  
+  /* Responsive Grid Layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .col-12,
+  .col-md-6 {
+    padding: 0 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .col-md-6 {
+      width: 50%;
+    }    
+  }
+
+  .image-logo{
+    position: absolute;
+    margin-top: 14%;
+    margin-bottom: 86%;
+    margin-right: 80%;
+    margin-left: 20%;         
+    width: 300px;
+    height: 300px;
+    
+  }
+.signup{
+  text-align: center;
+}
